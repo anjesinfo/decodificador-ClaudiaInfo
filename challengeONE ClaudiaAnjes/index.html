@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de Texto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="./img/favi.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <center>
+    <header>
+      <a href="http://alura.com.br">
+        <img src="img/Aluralogo.png" class="logo-alura">
+      </a>  
+      <h2>Decodificador de textos</h2>
+    </header>
+    
+    <section class="caixas-de-texto">
+
+      <form class="entrada">
+        <!--<p class="alerta">🟎Não inserir caracteres especiais e ou acentos</p>-->
+        <label for="mensagem-entrada"></label><br>
+        <textarea name="mensagem-entrada" id="mensagem-entrada"
+          placeholder="Escreva sua mensagem sem caracteres especiais"></textarea><br>
+
+        <input type="button" id="btn-entrada" name="btn-entrada" value="Criptografar" onclick="criptografa_mensagem()">
+        <input type="button" id="btn-limpar" name="btn-limpar" value="Limpar" onclick="limpar_mensagem()">
+      </form>
+      <form class="saida">
+        <img src="./img/img-saida.png" alt="imagem inicial que cobre o textarea de saída" id="img-saida">
+        <label for="mensagem-saida"></label><br>
+        <textarea name="mensagem-saida" id="mensagem-saida"></textarea><br>
+        <input type="button" id="btn-saida" name="btn-saida" value="Descriptografar"
+          onclick="descriptografa_mensagem()">
+        <input type="button" id="btn-copiar" name="btn-copiar" value="Copiar" onclick="copiar_mensagem()">
+      </form>
+    </section>
+    <footer>
+      <span> &reg; design by Claudia An.Jesus - Todos os direitos reservados.</span>
+      <div class="redes-sociais">
+        <a href="https://github.com/anjesinfo" target="_blank"><img src="img/git.png" alt="imagem-gitHub"></a>
+        <a href="https://www.linkedin.com/in/claudia-anuncia%C3%A7%C3%A3o-de-jesus-00114329" target="_blank"><img src="img/link.png"
+            alt="imagem-linkdin"></a>
+        
+        
+      </div>
+    </footer>
+  </center>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

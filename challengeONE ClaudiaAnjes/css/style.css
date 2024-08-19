@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Aplicando fonte padrão ao corpo do documento*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #202124;
+}
+
+/*Estilizando header*/
+header {
+  background-color: #35363a;
+  padding: 20px;
+  font-size: 35px;
+  color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imagens-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-alura {
+  padding: 20px;
+}
+
+/*Estilizando os textareas*/
+
+.caixas-de-texto{
+  background: #202124;
+}
+
+textarea {
+  width: 90%;
+  height: 500px;
+  font-size: 18px;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  resize: none;
+  background: #35363a;
+}
+
+/*Estilizando o textarea de entrada de mensagens*/
+.entrada {
+  float: left;
+  width: 50%;
+  background-color: #202124;
+}
+
+/*Estilizando o textarea de saída de mensagens*/
+.saida {
+  float: left;
+  width: 50%;
+  background-color: #202124;
+}
+
+/*Estilizando a imagem que cobre o textarea de saida de mensagens*/
+.saida img {
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: -200px;
+}
+
+/*Estilizando a mensagem de caracteres especiais e acentos*/
+.alerta {
+  margin-left: -400px;
+  padding: 0px;
+  opacity: 80%;
+  color: #fff;
+  display: inline;
+  margin-top: -22px;
+  font-size: 18px;
+  margin-bottom: 50px;
+  position: absolute;
+}
+
+/*Estilizando os inputs*/
+input {
+  padding: 10px;
+  width: 20%;
+  color: #FFFFFF;
+  margin: 10px;
+  border: 1px solid #202124;
+  border-radius: 10px;
+  transition: 400ms;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #35363a
+}
+
+/*Estilizando os inputs ao passar o mouse*/
+input:hover {
+  background-color: #00d0f0;
+  color: #09202e;
+  box-shadow: 0 0 10px #00d0f0;
+  border: 1px solid #09202e;
+}
+
+/*limpando o both após as flutuações de elementos*/
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Estilizando o footer*/
+footer {
+  background-color: #35363a;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/*Estilizando o texto do footer*/
+footer span {
+  position: relative;
+  margin-left: -220px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/*Estilizando a div rede sociais*/
+.redes-sociais {
+  display: flex;
+}
+
+/*Estilizando imagens das redes sociais*/
+.redes-sociais img {
+  width: 32px;
+  margin: 0 5px 0 5px;
+}
+
+/*Aplicando o layout responsivo*/
+@media (max-width: 600px) {
+  header {
+    margin-top: -50px;
+    padding: 40px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .entrada,
+  .saida {
+    width: 100%;
+    height: auto;
+  }
+
+  .alerta {
+    margin-top: -70px;
+    margin-left: -170px;
+    font-size: 25px;
+
+
+
+  }
+
+  input {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  footer {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer span {
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .redes-sociais {
+    padding: 10px;
+    width: 100%;
+  }
+}
