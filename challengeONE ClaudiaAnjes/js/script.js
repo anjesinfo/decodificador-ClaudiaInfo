@@ -1,8 +1,6 @@
 
-//variável global para capturar o texto do usuário
 let mensagemInicial = document.getElementById("mensagem-entrada");
 
-//Função para criptografar mensagens
 function criptografa_mensagem() {
 
   if (mensagemInicial.value === "") {//validação inicial
@@ -16,14 +14,14 @@ function criptografa_mensagem() {
     .replace(/o/g, 'ober').replace(/u/g, "ufat");
 
   document.getElementById("mensagem-saida").value = mensagem_codificada;
-  //atualiza campos
+  //atualizar campos
   document.getElementById("img-saida").style.display = "none";
   document.getElementById("mensagem-entrada").value = "";
   document.getElementById("mensagem-entrada").style.background = "#ffffff";
 
 }
 
-//Função para descriiptografar mensagens
+//descriptografar mensagens
 function descriptografa_mensagem() {
   if (mensagemInicial.value === "") {//validação inicial
     alert("Digite um Texto para Criptografar ou Descriptografar");
@@ -37,14 +35,14 @@ function descriptografa_mensagem() {
 
   document.getElementById("mensagem-saida").value = mensagem_codificada;
 
-  //atualiza campos
+  //atualizar campos
   document.getElementById("btn-copiar").style.visibility = "visible";
   document.getElementById("btn-limpar").style.visibility = "visible";
   document.getElementById("img-saida").style.display = "none";
   document.getElementById("mensagem-entrada").style.background = "#ffffff";
 }
 
-//Função para copiar mensagens
+//copiar mensagens
 function copiar_mensagem() {//validação inicial
   if (document.getElementById("mensagem-saida").value === "") {
     alert("Não há mensagem para copiar");
@@ -58,7 +56,7 @@ function copiar_mensagem() {//validação inicial
   mensagemInicial.focus();
 }
 
-//Função para limpar mensagens
+//limpar mensagens
 function limpar_mensagem() {//validações iniciais
   if ((document.getElementById("mensagem-entrada").value === "") && (document.getElementById("mensagem-saida").value === "")) {
     alert("Não há mensagem para Limpar");
