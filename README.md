@@ -1,4 +1,5 @@
-# challangeoneclaudiaanjes
+# challange decodificador-ClaudiaInfo
+
 Copyright (c) 2024 Claudia Anunciação de Jesus
 
 É concedida permissão, gratuita, a qualquer pessoa que obtenha uma cópia deste software e arquivos de documentação associados (o "Software"), para lidar com o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software, e para permitir que as pessoas a quem o Software é fornecido o façam, sujeito às seguintes condições:
